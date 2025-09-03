@@ -149,7 +149,7 @@ L.Control.FeatureLegend = L.Control.extend({
         this._link.style.display = "none";
         L.DomUtil.addClass(this._container, 'leaflet-control-feature-legend-expanded');
 
-        for (symbol of this._symbols) {
+        for (let symbol of this._symbols) {
             symbol.recenter();
         }
 
